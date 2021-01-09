@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/paslavskyi9roman/TechShop/issues"
   },
-  "homepage": "https://github.com/paslavskyi9roman/TechShop#readme"
+  "homepage": "https://github.com/paslavskyi9roman/TechShop#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
 }
