@@ -12,11 +12,10 @@ connectDB()
 const app = express()
 
 app.get('/', (req, res) => {
-  console.log(products)
-  res.send('API is running...')
+  res.send('API is running....')
 })
 
-app.use('./api/products', productRoutes)
+app.use('/api/products', productRoutes)
 
 const PORT = process.env.PORT || 5000
 

@@ -2,7 +2,7 @@ import mongoose from 'mongoose'
 
 const orderSchema = mongoose.Schema(
   {
-    name: {
+    user: {
       type: mongoose.Schema.Types.ObjectId,
       required: true,
       ref: 'User',
@@ -27,6 +27,10 @@ const orderSchema = mongoose.Schema(
       country: { type: String, required: true },
     },
     paymentMethod: {
+      type: String,
+      required: true,
+    },
+    paymentResult: {
       id: { type: String },
       status: { type: String },
       update_time: { type: String },
