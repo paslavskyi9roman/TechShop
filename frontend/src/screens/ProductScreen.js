@@ -5,10 +5,10 @@ import { Row, Col, ListGroup, ListGroupItem, Card, Button, Image, Form } from 'r
 import Rating from '../components/Rating'
 import Loader from '../components/Loader'
 import Message from '../components/Message'
-import { listProductDetails } from '../action/productAction'
+import { listProductDetails } from '../actions/productAction'
 
 const ProductScreen = ({ history, match }) => {
-  const [qty, setQty] = useState(0)
+  const [qty, setQty] = useState(1)
 
   const dispatch = useDispatch()
 
