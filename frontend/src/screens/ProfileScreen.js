@@ -1,10 +1,9 @@
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import { Form, Button, Row, Col } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import Message from '../components/Message'
 import Loader from '../components/Loader'
-import { getUseretails } from '../actions/userActions'
+import { getUserDetails } from '../actions/userActions'
 
 const ProfileScreen = ({ location, history }) => {
   const [name, setName] = useState('')
@@ -26,7 +25,7 @@ const ProfileScreen = ({ location, history }) => {
       history.push('/login')
     } else {
       if (!user.name) {
-        dispatch(getUseretails('profile'))
+        dispatch(getUserDetails('profile'))
       } else {
         setName(user.name)
         setEmail(user.email)
